@@ -125,6 +125,8 @@ backend_node_build() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/backend
+  npm install @fortawesome/react-fontawesome
+  npm install @fortawesome/free-solid-svg-icons
   npm run build
 EOF
 
@@ -151,7 +153,7 @@ backend_update() {
   npm install
   npm update -f
   npm install @types/fs-extra
-  npm install @fortawesome/fontawesome-svg-core
+  npm install @fortawesome/react-fontawesome
   npm install @fortawesome/free-solid-svg-icons
   rm -rf dist 
   npm run build
