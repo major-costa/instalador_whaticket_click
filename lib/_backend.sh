@@ -151,6 +151,8 @@ backend_update() {
   npm install
   npm update -f
   npm install @types/fs-extra
+  npm install @fortawesome/fontawesome-svg-core
+  npm install @fortawesome/free-solid-svg-icons
   rm -rf dist 
   npm run build
   npx sequelize db:migrate
