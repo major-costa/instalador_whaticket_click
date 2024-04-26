@@ -17,6 +17,8 @@ frontend_node_dependencies() {
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/frontend
   npm install
+  npm install @fortawesome/react-fontawesome
+  npm install @fortawesome/free-solid-svg-icons
 EOF
 
   sleep 2
